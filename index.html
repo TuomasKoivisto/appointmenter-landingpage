@@ -1,0 +1,53 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Tuomas Koivisto">
+    <meta name="description" content="appointment app">
+    <meta name="format-detection" content="telephone=no">
+
+    <title>Appointmenter</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    
+    <link rel="stylesheet" href="main.min.css">
+
+</head>
+
+<body onload="htmlReady()" onresize="checkWindowWidth()">
+    <header class="header">
+      
+          <h2 class="logo"><a href="#">APPOINTMENTER</a></h2>
+      
+          <a id="menu-icon" onclick="toggleNavbar()">&#9776; Menu</a>
+      
+          <nav id="navbar" class="navbar">
+            <ul class="menu justify-start">
+                <li class="nav-item-link"><a href="#">About</a></li>
+                <li class="nav-item-link"><a href="#">Contact</a></li>
+            </ul>
+            <ul class="menu justify-end">
+                <li class="nav-form-item"><input type="text" placeholder="username"></li>
+                <li class="nav-form-item"><input type="text" placeholder="password"></li>
+                <li class="nav-form-item"><button>SIGN IN</button></li>
+            </ul>
+          </nav>
+      </header>
+
+      <main>
+          <div>
+            <h1>#1 Appointment App</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque consequuntur aut expedita aperiam id est fuga. Cum repellat officia reiciendis tempora, nemo voluptate, optio, ut aspernatur reprehenderit quo dolores illo.</p>
+            <div id="button-group">
+                <button id="free-trial">Free Trial</button>
+                <button id="buy-now">Buy Now</button>
+            </div>
+        </div>
+            <img id="main-img" src="images/hourglass.jpg" alt="appointment app image">
+      </main>
+
+    <script src="main.min.js"></script>
+</body>
+</html>
